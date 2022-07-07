@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/user_img"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="38dp"
+            android:src="@drawable/loca_icon"
+            app:shapeAppearanceOverlay="@style/circular"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="138dp"
+            android:hint="@string/user_name"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/user_location"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="185dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/loca_icon" />
+
+        <TextView
+            android:id="@+id/show_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="69dp"
+            android:hint="@string/location"
+            android:textColor="#8E8787"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/available_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="30dp"
+            android:hint="status"
+            android:textColor="#DA2323"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="98dp"
+            android:textSize="15sp"
+            android:hint="@string/languages"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/person_connect"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="188dp"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/people_ic" />
+
+        <TextView
+            android:id="@+id/point_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="223dp"
+            android:layout_marginTop="129dp"
+            android:text="@string/pts"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pts_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="128dp"
+
+            android:textSize="16sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
